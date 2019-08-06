@@ -1,0 +1,55 @@
+{
+  "name": "@magicdawn/generator-tampermonkey",
+  "version": "0.0.1",
+  "description": "generator-tampermonkey",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-cover": "nyc --reporter=lcov --reporter=text mocha",
+    "report-cover": "codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/magicdawn/generator-tampermonkey.git"
+  },
+  "keywords": [
+    "tampermonkey",
+    "tp"
+  ],
+  "author": "magicdawn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicdawn/generator-tampermonkey/issues"
+  },
+  "homepage": "https://github.com/magicdawn/generator-tampermonkey#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "git-config": "^0.0.7",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "yeoman-generator": "^4.0.1"
+  },
+  "devDependencies": {
+    "@magicdawn/eslint-config": "^0.0.1",
+    "@magicdawn/prettier-config": "^0.0.1",
+    "codecov": "^3.3.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0",
+    "should": "^13.2.3",
+    "eslint": "latest",
+    "prettier": "latest",
+    "husky": "latest",
+    "lint-staged": "latest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,less,vue}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
