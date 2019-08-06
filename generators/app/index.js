@@ -36,7 +36,14 @@ module.exports = class AppGenerator extends Generator {
 
     // tpl
     {
-      const files = ['nodemon.json', 'package.json', 'rollup.config.js', 'scripts', 'src']
+      const files = [
+        'nodemon.json',
+        'package.json',
+        'rollup.config.js',
+        'readme.txt',
+        'scripts',
+        'src',
+      ]
       for (let f of files) {
         const from = this.templatePath('template/' + f)
         const to = this.destinationPath(this.options.appname + '/' + f)
