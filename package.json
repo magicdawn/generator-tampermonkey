@@ -3,6 +3,17 @@
   "version": "0.0.1",
   "description": "generator-tampermonkey",
   "main": "generators/app/index.js",
+  "files": [
+    "generators",
+    "template",
+    ".eslintrc.yml",
+    ".eslintignore",
+    "prettier.config.js",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "mocha",
     "test-cover": "nyc --reporter=lcov --reporter=text mocha",

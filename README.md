@@ -1,4 +1,5 @@
 # @magicdawn/generator-tampermonkey
+
 > generator-tampermonkey
 
 [![Build Status](https://img.shields.io/travis/magicdawn/@magicdawn/generator-tampermonkey.svg?style=flat-square)](https://travis-ci.org/magicdawn/@magicdawn/generator-tampermonkey)
@@ -8,17 +9,25 @@
 [![npm license](https://img.shields.io/npm/l/@magicdawn/generator-tampermonkey.svg?style=flat-square)](http://magicdawn.mit-license.org)
 
 ## Install
+
 ```sh
-$ npm i @magicdawn/generator-tampermonkey --save
+$ npm i -g @magicdawn/generator-tampermonkey
 ```
 
-## API
-```js
-const magicdawnTampermonkeyTools = require('@magicdawn/generator-tampermonkey');
+## Usage
+
+```sh
+# generate
+$ yo @magicdawn/tampermonkey
+
+# add husky config
+$ yo magicdawn:add-config
 ```
 
 ## Changelog
+
 [CHANGELOG.md](CHANGELOG.md)
 
 ## License
+
 the MIT License http://magicdawn.mit-license.org
