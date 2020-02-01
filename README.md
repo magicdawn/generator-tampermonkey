@@ -18,8 +18,8 @@ $ npm i -g @magicdawn/generator-tampermonkey
 # generate
 $ yo @magicdawn/tampermonkey
 
-# add husky config
-$ yo magicdawn:add-config
+# project setups
+$ yo magicdawn:setup
 ```
 
 ## Changelog
